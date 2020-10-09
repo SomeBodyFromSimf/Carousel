@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.item_view.view.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) 
+        setContentView(R.layout.activity_main)
         carousel.initList<CustomObj>(R.layout.item_view){holder, item ->
             with(holder.itemView) {
                 tvStr.text = item.str
@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
                 tvChas.text = item.chas
             }
         }
-        carousel.setData(CustomObj.getList() as List<Parcelable>)
+        carousel.setData(CustomObj.getList())
     }
 }
