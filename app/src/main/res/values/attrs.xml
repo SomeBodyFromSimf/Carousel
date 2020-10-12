@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CarouselViewPager2">
+        <attr name="elementDistance" format="dimension" />
+        <attr name="slider" format="boolean" />
+        <attr name="sliderDuration" format="integer" />
+        <attr name="scaleNotCurrent" format="boolean" />
+        <attr name="loop" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="infinite" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>
